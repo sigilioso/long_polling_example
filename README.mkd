@@ -3,3 +3,17 @@ Simple long-polling example
 
 A simple web polling example based on Flask and Flask-restful on server side and jQuery on client side.
 
+
+Requirements:
+--------------
+
+- Flask-restful (``pip install flask-restful``).
+
+
+How to try it:
+----------------
+
+- Clone the repository
+- Execute the server (``python server.py``)
+- Open the url <http://127.0.0.1:5000/>
+- Change and save``data.txt`` to see how it works
