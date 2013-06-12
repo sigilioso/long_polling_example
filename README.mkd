@@ -1,4 +1,5 @@
-Simple long polling example
+Simple long-polling example
 =============================
 
-A simple web polling example based on Flask and Flask-restful on server side.
+A simple web polling example based on Flask and Flask-restful on server side and jQuery on client side.
+
