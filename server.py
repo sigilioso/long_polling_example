@@ -27,9 +27,7 @@ class DataUpdate(restful.Resource):
         args:
             request_time: last request timestamp
         """
-        last_change = os.stat('data.txt').st_mtime
-        app.config['first_time'] = False
-        return last_change > request_time
+        return os.stat('data.txt').st_mtime > request_time
 
     def get(self):
         """
@@ -49,6 +47,9 @@ class DataUpdate(restful.Resource):
 class Data(restful.Resource):
 
     def get(self):
+        """
+        Returns the current data content
+        """
         content = ''
         with open('data.txt') as data:
             content = data.read()
