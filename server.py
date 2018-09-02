@@ -2,7 +2,7 @@
 
 from flask import Flask
 from flask import render_template
-from flask.ext import restful
+import flask_restful as restful
 
 import os
 import time
